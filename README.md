@@ -7,5 +7,5 @@
 ## GitHub: https://github.com/mkheck13/socialmediadashboard.git
 ## Vercel:  https://socialmediadashboard-sage.vercel.app/
 
-## Peer Reviewer:  
-## Peer Review:  
+## Peer Reviewer: Adrian Martinez  
+## Peer Review: Code looks and runs as expected, the site is nearly identical to the design images, only nitpicks are the overview text for views/retweets/likes are a bit too small, also transition from dark to light and vice-versa is sudden, but not an issue, mobile and desktop responsiveness also work great as well.  
