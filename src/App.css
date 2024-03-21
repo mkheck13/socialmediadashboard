@@ -32,7 +32,241 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./Assets/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: Inter Bold;
+  src: url(./Assets/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter Light;
+  src: url(./Assets/Inter-Light.ttf);
+}
+
+.bgDark{
+  background-color:hsl(230, 17%, 14%);
+}
+
+.bgLight {
+  background-color:#FFFFFF;
+}
+
+
+.relative {
+  position: relative;
+  z-index: 1;
+}
+
+.bgRectangleLight {
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  height: 30vh;
+  min-width: 100vw;
+  background: hsl(225, 100%, 98%);
+  border-radius: 0 0 25px 25px;
+  z-index: 0;
+}
+
+.bgRectangleDark {
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  height: 30vh;
+  min-width: 100vw;
+  background: hsl(232, 19%, 15%);
+  border-radius: 0 0 25px 25px;
+  z-index: 0;
+}
+
+.zIndex {
+  z-index: 1;
+}
+
+.minH {
+  min-height: 100vh;
+}
+
+
+.boxLight {
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 5px;
+}
+
+.boxLight:hover {
+  background-color: hsl(227, 47%, 92%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boxDark {
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 5px;
+}
+
+.boxDark:hover {
+  background-color: hsl(228, 28%, 25%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.igBar {
+  background: rgb(252, 196, 104);
+  background: linear-gradient(90deg, rgba(252, 196, 104, 1) 0%, rgba(223, 73, 150, 1) 100%);
+}
+
+.facebookBar {
+  background: hsl(208, 92%, 53%);
+}
+
+.twitterBar {
+  background: hsl(203, 89%, 53%);
+}
+
+.youtubeBar {
+  background: hsl(348, 97%, 39%);
+}
+
+.barRadius {
+  border-radius: 5px 5px 0 0;
+}
+
+.inter {
+  font-family: Inter;
+}
+
+.interLight {
+  font-family: Inter Light;
+}
+
+.interBold {
+  font-family: Inter Bold;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.followersNum {
+  font-size: 55px;
+  height: 72px;
+  margin-top: 5px;
+}
+
+.followers {
+  letter-spacing: 5px;
+}
+
+.green {
+  color: hsl(163, 72%, 41%);
+}
+
+.red {
+  color: hsl(356, 69%, 56%);
+}
+
+.username {
+  font-size: 12px;
+}
+
+.heading {
+  font-size: 14px;
+}
+
+.lightTxt1 {
+  color: hsl(228, 12%, 44%)
+}
+
+.darkTxt1 {
+  color: hsl(228, 34%, 66%)
+}
+
+.darkTxt2 {
+  color: hsl(0, 0%, 100%)
+}
+
+.lightTxt2 {
+  color: hsl(230, 17%, 14%);
+}
+
+.logos {
+  width: 20px;
+  height: 20px;
+}
+
+.arrows {
+  width: 8px;
+  height: 4px;
+}
+
+.hrLine {
+  border: solid 1.5px hsl(228, 12%, 70%);
+}
+
+.darkHrLine {
+  border-top-width: 0.1px;
+  border-color:hsl(228, 28%, 30%);
+}
+
+.switch {
+  position: relative;
+  display: inline block;
+  width: 47px;
+  height: 24px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(230, 22%, 74%);
+  transition: 0.5s ease;
+  border-radius: 30px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  right: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.5s ease;
+  border-radius: 25px;
+}
+
+input:checked + .slider {
+  background: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+}
+
+.slider:hover {
+  background: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+  transition: 0.5s ease;
+}
+
+input:checked + .slider:before {
+  transform: translateX(-23px);
+  background-color: hsl(228, 28%, 20%);
 }
